@@ -271,6 +271,21 @@ a {
     justify-content: center;
 }
 
+.close-hamburger-menu div {
+    display: none;
+    width: 0;
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    background: #0000;
+}
+
+.close-hamburger-menu.visible div {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
 .toggle-btn {
     padding: 0.4rem 0.8rem;
     background: #444;

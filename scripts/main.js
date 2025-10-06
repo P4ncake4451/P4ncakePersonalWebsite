@@ -51,6 +51,7 @@ hamburgerCheckbox.addEventListener("change", () => {
 
 const hamburger = document.getElementById("hamburger");
 const hamburgerMenu = document.getElementById("hamburger-menu");
+const hamburgerCloseArea = document.getElementById("close-hamburger-menu");
 
 window.onscroll = function() {
   if (hamburgerMenu.classList.contains("visible")){
@@ -66,6 +67,7 @@ window.onresize = function(){
 
 hamburger.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("visible");
+    hamburgerCloseArea.classList.toggle("visible");
     if (hamburgerMenu.classList.contains("visible")) {
       animateX();
     } else {
@@ -75,6 +77,7 @@ hamburger.addEventListener("click", () => {
 
 function closeHamburgerMenu(){
     hamburgerMenu.classList.remove("visible");
+    hamburgerCloseArea.classList.remove("visible");
     animateHamburger();
 }
 
