@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/all-pages.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>P4ncake!</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">
+            <div class="logo">
+                <img src="/images/p4ncake.png" alt="Logo" class="pixelart">
+                <span>P4ncake.com</span>
+            </div>
+        </a>
+        <div class="links">
+            <a href="#about-me">About Me</a>
+            <a href="#allure">Allure</a>
+            <a href="#needcoolershoes">NeedCoolerShoes</a>
+            <a href="#contact" class="hidden">Contact</a>
+        </div>
+        <div class="font-settings">
+            <span>Accessible Font</span>
+            <img src="/images/icons/accessibility.png" alt="Accessible Font" class="accessibility-icon">
+            <input type="checkbox" name="accessible-font" id="accessible-font">
+        </div>
+        <div class="hamburger-menu">
+            <button class="hamburger" id="hamburger">
+                <div alt="Hamburger Menu" class="hamburger-icon"></div>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hamburger-links" id="hamburger-menu">
+        <a href="#about-me" onclick="closeHamburgerMenu(); return 0;">About Me</a>
+        <a href="#allure" onclick="closeHamburgerMenu(); return 0;">Allure</a>
+        <a href="#needcoolershoes" onclick="closeHamburgerMenu(); return 0;">NeedCoolerShoes</a>
+        <a href="#contact" class="hidden" onclick="closeHamburgerMenu(); return 0;">Contact</a>
+        <div class="font-settings">
+            <img src="/images/icons/accessibility.png" alt="Accessible Font" class="accessibility-icon-hamburger">
+            <input type="checkbox" name="accessible-font" id="accessible-font-hamburger">
+        </div>
+    </div>
+
+    <section class="biography" id="about-me">
+        <div class="biography">
+            <h1>Welcome&nbsp;to my&nbsp;website!</h1>
+            <p>Hi! I'm <strong class="golden">P4ncake</strong>, I'm an artist and designer with way too many hobbies. I do Programming, Music, Sound&nbsp;effects, 3D&nbsp;models, I&nbsp;Draw, Paint and most importantly, I do <strong class="rainbow">Pixel&nbsp;Art</strong>, I've been doing it for the past <b class="inline-timer" id="pixelart-years">#</b> years!</p>
+        </div>
+    </section>
+
+    <section class="allure" id="allure">
+        <div class="allure">
+            <h1><a href="/allure"><img src="/images/allure-logo.png" alt="Allure" class="pixelart allure-logo"></a></h1>
+            <p>It's the main project I'm working on currently, and my biggest project so far. It's a resourcepack that aims to replace every single texture with one made by me. It also has many subprojects which you can see on the <strong><a href="/allure" class="golden">Allure&nbsp;page</a></strong>.</p>
+        </div>
+    </section>
+
+    <section class="needcoolershoes" id="needcoolershoes">
+        <div class="headanimation"></div>
+        <div class="needcoolershoes">
+            <h1 class="needcoolershoes-logo"><a href="https://needcoolershoes.com/?welcome=true"><img src="/images/needcoolershoes-logo.png" alt="NeedCoolerShoes" class="needcoolershoes-logo"></img>NeedCoolerShoes</a></h1>
+            <p>I'm also part of the team behind <strong class="golden">NeedCoolerShoes</strong>. I mainly design the new features and the UI but I also contibute code sometimes. NeedCoolerShoes is, and always was my favorite skin editor, which is why I decided to join their team.</p>
+        </div>
+    </section>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

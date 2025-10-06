@@ -1,0 +1,219 @@
+@keyframes bio-background {
+    0%{background-position:0% 0%}
+    20%{background-position:25% 50%}
+    40%{background-position:50% 0%}
+    60%{background-position:0% 20%}
+    80%{background-position:50% 32%}
+    100%{background-position:0% 0%}
+}
+
+@keyframes allure-background {
+    0%{background-position:0% 0%}
+    100%{background-position:1200% 300%}
+}
+
+@keyframes ncrs-background {
+    0%{background-position:0% 0%}
+    100%{background-position:5000% 10000%}
+}
+
+section.biography {
+    background-image: linear-gradient(#3453, #223b), url("/images/allure-birch.png");
+    background-size: auto 120%;
+    height: 100vh;
+    animation: bio-background 30s ease-in-out infinite;
+}
+
+section.biography::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/images/particles.webp");
+    background-size: cover;
+    background-repeat: repeat;
+    filter: blur(1px);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1;
+}
+
+div.biography {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - ((var(--scroll-pos) / var(--window-height))*200px)));
+    width: 55%;
+    opacity: calc(1 - (var(--scroll-pos) / var(--window-height)));
+    filter: blur(calc((var(--scroll-pos) / var(--window-height)) * 3px));
+}
+
+section.allure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(225deg, #13131caa,#1c1c26aa), url("/images/allure-blocks.png"), linear-gradient(#232323,#292929);
+    image-rendering:pixelated;
+    background-origin: 50% 50%;
+    background-size: 10000px;
+    animation: allure-background 3600s linear infinite;
+    height: 100vh;
+}
+
+div.allure {
+    width: 55%;
+}
+
+img.allure-logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+img.allure-logo:hover {
+    transform: scale(1.05);
+}
+
+section.needcoolershoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(225deg, #13132f88,#1c1c2f88), url("/images/blue-yellow-tiles-ncrs.png"), linear-gradient(0deg, #d5d0a9, #afc696, #84bb8b, #52ae88, #079c8a, #00858c, #00698b, #284883);
+    background-size: cover;
+    height: 100vh;
+}
+
+div.headanimation {
+    background-image: url("/images/meow-meow-pattern.webp");
+    background-size: 300px;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.07;
+    animation: ncrs-background 3600s linear infinite;
+}
+
+div.needcoolershoes {
+    position:absolute;
+    width: 55%;
+}
+
+.needcoolershoes-logo {
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Lato';
+}
+
+.needcoolershoes-logo a {
+    text-decoration: underline;
+    text-decoration-color: #fff0;
+    color: #fff;
+    transition: text-decoration-color 0.1s ease-in-out;
+}
+
+.needcoolershoes-logo a:hover {
+    text-decoration-color: #fffc;
+}
+
+img.needcoolershoes-logo {
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+    translate: 0px 25px;
+}
+
+img.needcoolershoes-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+
+    @keyframes bio-background {
+        0%{background-position:20% 0%}
+        20%{background-position:30% 20%}
+        40%{background-position:40% 0%}
+        60%{background-position:2% 10%}
+        80%{background-position:40% 15%}
+        100%{background-position:20% 0%}
+    }
+
+    div.biography, div.allure, div.needcoolershoes {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    div.biography, div.allure, div.needcoolershoes {
+        text-align: center;
+    }
+
+    section.biography {
+        animation: bio-background 50s ease-in-out infinite;
+    }
+
+    img.needcoolershoes-logo {
+        width: 150px;
+        height: 150px;
+        padding-left:100px;
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+
+    section.allure {
+        background-size: 9000px;
+    }
+}
+
+@media (max-width: 560px) {
+    @keyframes bio-background {
+        0%{background-position:40% 0%}
+        50%{background-position:60% 0%}
+        100%{background-position:40% 0%}
+    }
+
+    div.biography, div.allure, div.needcoolershoes {
+        width: 90%;
+        font-size: 1.3rem;
+        line-height: 1.5em;
+    }
+
+    section.biography {
+        animation: bio-background 40s ease-in-out infinite;
+    }
+}
+
+@media (max-width: 470px) {
+    div.biography, div.allure, div.needcoolershoes {
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.4em;
+    }
+
+    .allure img {
+        width: calc(90vw);
+    }
+}
+
+@media (max-width: 370px) {
+    div.biography, div.allure, div.needcoolershoes {
+        width: 99%;
+        font-size: 1.1rem;
+        line-height: 1.3em;
+    }
+
+    img.needcoolershoes-logo {
+        width: 50vw;
+        height: 50vw;
+        padding-left:0px;
+        padding-right: 0px;
+        padding-bottom: 25px;
+    }
+
+    .needcoolershoes-logo {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-height: 1400px) {
+    section.allure {
+        background-size: 15000px;
+    }
+}

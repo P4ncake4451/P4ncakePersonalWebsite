@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/all-pages.css">
+    <link rel="stylesheet" href="/styles/allure.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Allure - P4ncake!</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">
+            <div class="logo">
+                <img src="/images/p4ncake.png" alt="Logo" class="pixelart">
+                <span>P4ncake.com</span>
+            </div>
+        </a>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#story">The Story</a>
+            <a href="#subprojects">Subprojects</a>
+        </div>
+        <div class="font-settings">
+            <span>Accessible Font</span>
+            <img src="/images/icons/accessibility.png" alt="Accessible Font" class="accessibility-icon">
+            <input type="checkbox" name="accessible-font" id="accessible-font">
+        </div>
+        <div class="hamburger-menu">
+            <button class="hamburger" id="hamburger">
+                <div alt="Hamburger Menu" class="hamburger-icon"></div>
+            </button>
+        </div>
+    </nav>
+    <div class="hamburger-links" id="hamburger-menu">
+        <a href="#home" onclick="closeHamburgerMenu(); return 0;">Home</a>
+        <a href="#the-story" onclick="closeHamburgerMenu(); return 0;">The Story</a>
+        <a href="#subprojects" onclick="closeHamburgerMenu(); return 0;">Subprojects</a>
+        <div class="font-settings">
+            <img src="/images/icons/accessibility.png" alt="Accessible Font" class="accessibility-icon-hamburger">
+            <input type="checkbox" name="accessible-font" id="accessible-font-hamburger">
+        </div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home">
+            <h1><a href="https://modrinth.com/resourcepack/allure-pack"><img src="/images/allure-logo.png" alt="Allure" class="pixelart allure-logo"></a></h1>
+        </div>
+    </section>
+    <section class="story" id="story">
+        <div class="sga-particles"></div>
+        <div class="story">
+            <h1>The story of Allure</h1>
+            <p><strong class="golden">Allure</strong> has been in the works for over <b class="inline-timer" id="allure-years">#</b> years, but the actual development of what most people would associate with the modern version of <strong class="golden">Allure</strong> started <b class="inline-timer" id="allure-modern-years">#</b> years ago. The first versions of the pack weren't even supposed to be pretty, they were only supposed to be functional and the pack mostly looked like worse Vanilla Tweaks.<br><br>Over time the pack developed though, more and more textures started to get their own style that wasn't just recolors of textures from vanilla, for example the GUI buttons and a few items. As pack development went on, my artstyle developed and because of that, I often came back to my older textures to rework them. I shared my progress with people from Reddit and my Discord Server, and they seemed to like it. Until that point the pack was only downloadable through my Discord server, but all this positive feedback on the pack encouraged me to finally publish it on modrinth.</p>
+        </div>
+    </section>
+    
+    <section class="subprojects" id="subprojects">
+        <input type="search" class="subproject-search" name="subproject-search" id="subproject-search" placeholder="Search...">
+        <div class="cards">
+            <a href="https://modrinth.com/resourcepack/allure-dark-theme-gui">
+                <div class="card allure-dark-theme">
+                  <div class="card-bg"></div>
+                  <img class="pixelart card-logo" src="/images/allure-dark-theme-gui-logo.png" alt="Allure Dark Theme GUI">
+                </div>
+            </a>
+            <a href="https://modrinth.com/resourcepack/allure-emoji-pack">
+                <div class="card allure-emoji-pack">
+                  <div class="card-bg"></div>
+                  <img class="pixelart card-logo" src="/images/allure-emoji-pack-logo.png" alt="Allure Emoji Pack">
+                </div>
+            </a>
+            <a href="https://modrinth.com/resourcepack/allure-3d-plants">
+                <div class="card allure-3d-plants">
+                  <div class="card-bg"></div>
+                  <img class="pixelart card-logo" src="/images/allure-3d-plants-logo.png" alt="Allure 3D Plants">
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
