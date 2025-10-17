@@ -117,6 +117,7 @@ function EpochYearsAgo(element,timestamp) {
   }
 }
 
+EpochYearsAgo(document.getElementById("copyright-years"),946688400);
 EpochYearsAgo(document.getElementById("pixelart-years"),1593424800);
 EpochYearsAgo(document.getElementById("allure-years"),1633191780);
 EpochYearsAgo(document.getElementById("allure-modern-years"),1640995200);
