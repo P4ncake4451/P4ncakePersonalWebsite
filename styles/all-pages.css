@@ -145,7 +145,7 @@ a {
     color: white;
     padding: 0 1.5rem;
     box-sizing: border-box;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     box-shadow: #fff6 0px -1px 1px 1px;
 }
 
