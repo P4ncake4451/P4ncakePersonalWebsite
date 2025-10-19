@@ -3,13 +3,14 @@
 document.querySelector(':root').style.setProperty('--scroll-pos', this.scrollY );
 document.querySelector(':root').style.setProperty('--window-height', window.window.innerHeight );
 
-window.onscroll = function() {
+window.addEventListener('scroll', function() {
     document.querySelector(':root').style.setProperty('--scroll-pos', this.scrollY );
-  }
+    console.log(this.scrollY);
+});
   
-  window.onresize = function(){
-    document.querySelector(':root').style.setProperty('--window-height', window.window.innerHeight );
-  }
+window.addEventListener('resize', function() {
+  document.querySelector(':root').style.setProperty('--window-height', window.window.innerHeight );
+});
 
 // Accessibility font
 
@@ -54,17 +55,17 @@ const hamburger = document.getElementById("hamburger");
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const hamburgerCloseArea = document.getElementById("close-hamburger-menu");
 
-window.onscroll = function() {
+window.addEventListener('scroll', function() {
   if (hamburgerMenu.classList.contains("visible")){
     closeHamburgerMenu();
   }
-}
+});
 
-window.onresize = function(){
+window.addEventListener('resize', function() {
   if (hamburgerMenu.classList.contains("visible")){
     closeHamburgerMenu();
   }
-}
+});
 
 hamburger.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("visible");
