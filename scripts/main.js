@@ -5,7 +5,6 @@ document.querySelector(':root').style.setProperty('--window-height', window.wind
 
 window.addEventListener('scroll', function() {
     document.querySelector(':root').style.setProperty('--scroll-pos', this.scrollY );
-    console.log(this.scrollY);
 });
   
 window.addEventListener('resize', function() {
