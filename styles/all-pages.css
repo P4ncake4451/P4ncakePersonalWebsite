@@ -311,16 +311,43 @@ input[type="search"] {
 }
 
 section.footer {
+    color: #fbee;
     height: fit-content;
     background-image: linear-gradient(#08051baa,#1e212577), url("/images/allure-dark-theme-gui-banner.png");
     background-position: cover;
     padding-top:20px;
 }
 
-section.footer p {
+section.footer p a {
     color: #fbee;
     padding:0;
     margin:0;
+}
+
+section.footer .links-container {
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 1rem;
+}
+
+.links ul li a {
+    text-decoration: underline;
+    color: #fbee;
+}
+
+section.footer .links {
+    width:40vw;
+    text-align: center;
+}
+
+section.footer .links ul {
+    list-style: none;
+    margin-left:0;
+    padding-left:0;
 }
 
 section.footer .socials{
@@ -336,12 +363,34 @@ section.footer .socials{
 
 section.footer .socials img{
     width: 1rem;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(42%) saturate(388%) hue-rotate(280deg) brightness(96%) contrast(96%);
 }
 
 section.footer .copyright{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+section.footer .source {
+    opacity: 0.5;
+    display: flex;
+    margin-top: -1rem;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+section.footer .source a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fbee;
+}
+
+section.footer .source a img {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(42%) saturate(388%) hue-rotate(280deg) brightness(96%) contrast(96%);
+    width: 1rem;
+    padding-right:10px;
+    margin-bottom: -2px;
 }
 
 /* Responsiveness */
@@ -391,6 +440,12 @@ section.footer .copyright{
         display: block;
         width: 24px;
         user-select: none
+    }
+}
+
+@media (max-width:700px) {
+    section.footer .links {
+        width:80vw;
     }
 }
 
