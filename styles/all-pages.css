@@ -314,7 +314,8 @@ section.footer {
     color: #fbee;
     height: fit-content;
     background-image: linear-gradient(#08051baa,#1e212577), url("/images/allure-dark-theme-gui-banner.png");
-    background-position: cover;
+    background-size: cover;
+    background-position: center top;
     padding-top:20px;
 }
 
