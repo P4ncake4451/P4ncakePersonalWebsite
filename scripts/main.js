@@ -17,10 +17,11 @@ const body = document.body;
 const checkbox = document.getElementById("accessible-font");
 const hamburgerCheckbox = document.getElementById("accessible-font-hamburger");
 
+checkbox.checked = localStorage.getItem("accessibleFont")==="true";
+hamburgerCheckbox.checked = localStorage.getItem("accessibleFont")==="true";
+
 if (localStorage.getItem("accessibleFont") === "true") {
     body.classList.add("accessible-font");
-    checkbox.checked = true;
-    hamburgerCheckbox.checked = true;
 }
 
 checkbox.addEventListener("change", () => {
