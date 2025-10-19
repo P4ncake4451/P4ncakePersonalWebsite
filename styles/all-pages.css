@@ -367,13 +367,14 @@ section.footer .socials img{
 section.footer .copyright{
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0;
     text-align: center;
 }
 
 section.footer .source {
     opacity: 0.5;
     display: flex;
-    margin-top: -1rem;
+    margin-top: -2rem;
     justify-content: right;
     padding-right: 10px;
 }
