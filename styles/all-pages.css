@@ -393,6 +393,16 @@ section.footer .source a img {
     margin-bottom: -2px;
 }
 
+section.footer * a {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+section.footer * a:hover {
+    opacity: 1;
+    filter: brightness(1.1)
+}
+
 /* Responsiveness */
 
 @media (max-width: 1200px) {
