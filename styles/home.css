@@ -18,7 +18,7 @@
 }
 
 section.biography {
-    background-image: linear-gradient(#3453, #223b), url("../images/allure-birch.png");
+    background-image: linear-gradient(#3453, #223b), url("../images/allure-birch.png"), radial-gradient(at 94.7% 22.2%, #46503d 0px, transparent 50%), radial-gradient(at 49.7% 49.3%, #b8775c 0px, transparent 50%), radial-gradient(at 48.6% 1.5%, #cfe6ed 0px, transparent 50%), radial-gradient(at 18.7% 71.9%, #7fc761 0px, transparent 50%), radial-gradient(at 68.6% 94.3%, #BBBFBA 0px, transparent 50%), linear-gradient(#8CB07D);
     background-size: auto 120%;
     height: 100vh;
     animation: bio-background 30s ease-in-out infinite;
@@ -75,7 +75,7 @@ section.needcoolershoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(225deg, #13132f88,#1c1c2f88), url("../images/blue-yellow-tiles-ncrs.png"), linear-gradient(0deg, #d5d0a9, #afc696, #84bb8b, #52ae88, #079c8a, #00858c, #00698b, #284883);
+    background-image: linear-gradient(225deg, #13132f88,#1c1c2f88), url("../images/blue-yellow-tiles-ncrs.png"), linear-gradient(0deg, #cadbd4, #d2e1c1, #abc5b0, #538391, #313a4c);
     background-size: cover;
     height: 100vh;
 }

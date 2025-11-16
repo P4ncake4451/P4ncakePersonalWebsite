@@ -313,7 +313,7 @@ input[type="search"] {
 section.footer {
     color: #fbee;
     height: fit-content;
-    background-image: linear-gradient(#08051baa,#1e212577), url("../images/allure-dark-theme-gui-banner.png");
+    background-image: linear-gradient(#08051baa,#1e212577), url("../images/allure-dark-theme-gui-banner.png"), linear-gradient(#73228c, #372f3b, #2e2134);
     background-size: cover;
     background-position: center top;
     padding-top:20px;
