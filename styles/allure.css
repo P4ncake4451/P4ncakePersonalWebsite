@@ -7,7 +7,7 @@ section.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(225deg, #13131caa,#1c1c26aa), url("/images/allure-blocks.png"), linear-gradient(#232323,#292929);
+    background-image: linear-gradient(225deg, #13131caa,#1c1c26aa), url("../images/allure-blocks.png"), linear-gradient(#232323,#292929);
     image-rendering:pixelated;
     background-origin: 50% 50%;
     background-size: 10000px;
@@ -28,7 +28,7 @@ section.story {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#112c, #2237), url("/images/enchanting.png");
+    background-image: linear-gradient(#112c, #2237), url("../images/enchanting.png");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -42,7 +42,7 @@ div.story {
 }
 
 div.sga-particles {
-    background-image: url("/images/sga-particles.webp");
+    background-image: url("../images/sga-particles.webp");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -52,7 +52,7 @@ div.sga-particles {
 }
 
 section.subprojects {
-    background-image: linear-gradient(#112e, #2239), url("/images/pink-yellow-tiles.png");
+    background-image: linear-gradient(#112e, #2239), url("../images/pink-yellow-tiles.png");
     background-size: cover;
     background-position: center;
     height: fit-content;
@@ -129,15 +129,15 @@ section.subprojects {
 }
 
 .allure-dark-theme .card-bg {
-    background-image: url("/images/allure-dark-theme-gui-banner.png");
+    background-image: url("../images/allure-dark-theme-gui-banner.png");
 }
 
 .allure-emoji-pack .card-bg {
-    background-image: url("/images/allure-emoji-pack-banner.png");
+    background-image: url("../images/allure-emoji-pack-banner.png");
 }
 
 .allure-3d-plants .card-bg {
-    background-image: url("/images/allure-3d-plants-banner.png");
+    background-image: url("../images/allure-3d-plants-banner.png");
 }
 
 @media (max-width: 1200px) {

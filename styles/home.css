@@ -18,7 +18,7 @@
 }
 
 section.biography {
-    background-image: linear-gradient(#3453, #223b), url("/images/allure-birch.png");
+    background-image: linear-gradient(#3453, #223b), url("../images/allure-birch.png");
     background-size: auto 120%;
     height: 100vh;
     animation: bio-background 30s ease-in-out infinite;
@@ -28,7 +28,7 @@ section.biography::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("/images/particles.webp");
+    background: url("../images/particles.webp");
     background-size: cover;
     background-repeat: repeat;
     filter: blur(1px);
@@ -51,7 +51,7 @@ section.allure {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(225deg, #13131caa,#1c1c26aa), url("/images/allure-blocks.png"), linear-gradient(#232323,#292929);
+    background-image: linear-gradient(225deg, #13131caa,#1c1c26aa), url("../images/allure-blocks.png"), linear-gradient(#232323,#292929);
     image-rendering:pixelated;
     background-origin: 50% 50%;
     background-size: 10000px;
@@ -75,13 +75,13 @@ section.needcoolershoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(225deg, #13132f88,#1c1c2f88), url("/images/blue-yellow-tiles-ncrs.png"), linear-gradient(0deg, #d5d0a9, #afc696, #84bb8b, #52ae88, #079c8a, #00858c, #00698b, #284883);
+    background-image: linear-gradient(225deg, #13132f88,#1c1c2f88), url("../images/blue-yellow-tiles-ncrs.png"), linear-gradient(0deg, #d5d0a9, #afc696, #84bb8b, #52ae88, #079c8a, #00858c, #00698b, #284883);
     background-size: cover;
     height: 100vh;
 }
 
 div.headanimation {
-    background-image: url("/images/meow-meow-pattern.webp");
+    background-image: url("../images/meow-meow-pattern.webp");
     background-size: 300px;
     height: 100vh;
     width: 100%;
