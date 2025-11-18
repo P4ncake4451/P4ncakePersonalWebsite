@@ -28,7 +28,7 @@ section.story {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#112c, #2237), url("../images/enchanting.png");
+    background-image: linear-gradient(#112c, #2237), url("../images/enchanting.png"), radial-gradient(at 5.3% 81.5%, #4c3554 0px, transparent 50%), radial-gradient(at 93.3% 80.5%, #d68d67 0px, transparent 50%), radial-gradient(at 71% 27.6%, #996864 0px, transparent 50%), radial-gradient(at 44.1% 5.6%, #fbf2f8 0px, transparent 50%), radial-gradient(at 15.3% 38.5%, #c16d84 0px, transparent 50%), linear-gradient(#5D5C7A);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -52,7 +52,7 @@ div.sga-particles {
 }
 
 section.subprojects {
-    background-image: linear-gradient(#112e, #2239), url("../images/pink-yellow-tiles.png");
+    background-image: linear-gradient(#001d, #2239), url("../images/pink-yellow-tiles.png"), linear-gradient(#ffffee, #fde0d4, #eac9ca);
     background-size: cover;
     background-position: center;
     height: fit-content;
