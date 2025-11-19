@@ -22,6 +22,10 @@ let cells_to_unrender = [];
 let rendered_cells = [];
 
 root.style.setProperty("--scale", scale+"px");
+if (window_width < 640 || window_height < 480) {
+    scale = 192;
+    root.style.setProperty("--scale", scale+"px");
+}
 root.style.setProperty("--window-width", window_width);
 root.style.setProperty("--window-height", window_height);
 root.style.setProperty("--x", x);
