@@ -13,6 +13,50 @@
     <title>P4ncake!</title>
 </head>
 <body>
+    <svg width="0" height="0" style="position:absolute;">
+        <defs>
+            <filter id="1">
+                <feColorMatrix
+                type="matrix"
+                values="
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  1 0 0 0 0
+                  0 0 0 1 0
+                " />
+            </filter>
+            <filter id="2">
+                <feColorMatrix
+                type="matrix"
+                values="
+                  0 0 1 0 0
+                  1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 0 1 0
+                " />
+            </filter>
+            <filter id="3">
+                <feColorMatrix
+                type="matrix"
+                values="
+                  0 0 1 0 0
+                  0 1 0 0 0
+                  1 0 0 0 0
+                  0 0 0 1 0
+                " />
+            </filter>
+            <filter id="4">
+                <feColorMatrix
+                type="matrix"
+                values="
+                  1 0 0 0 0
+                  0 0 1 0 0
+                  0 1 0 0 0
+                  0 0 0 1 0
+                " />
+            </filter>
+        </defs>
+    </svg>
     <nav class="navbar">
         <a href="./">
             <div class="logo">
@@ -24,6 +68,7 @@
             <a href="#about-me">About Me</a>
             <a href="#allure">Allure</a>
             <a href="#needcoolershoes">NeedCoolerShoes</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact" class="hidden">Contact</a>
         </div>
         <div class="font-settings">
@@ -42,6 +87,7 @@
         <a href="#about-me" onclick="closeHamburgerMenu(); return 0;">About Me</a>
         <a href="#allure" onclick="closeHamburgerMenu(); return 0;">Allure</a>
         <a href="#needcoolershoes" onclick="closeHamburgerMenu(); return 0;">NeedCoolerShoes</a>
+        <a href="#portfolio" onclick="closeHamburgerMenu(); return 0;">Portfolio</a>
         <a href="#contact" class="hidden" onclick="closeHamburgerMenu(); return 0;">Contact</a>
         <div class="font-settings">
             <img src="./images/icons/accessibility.png" alt="Accessible Font" class="accessibility-icon-hamburger">
@@ -73,6 +119,28 @@
         </div>
     </section>
 
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-bg-overlay"></div>
+        <div class="portfolio-bg-items">
+            <div class="portfolio-image portfolio-apple">
+                <div class="quarter-1"></div>
+                <div class="quarter-2"></div>
+                <div class="quarter-3"></div>
+                <div class="quarter-4"></div>
+            </div>
+            <div class="portfolio-image portfolio-slimeball">
+                <div class="quarter-1"></div>
+                <div class="quarter-2"></div>
+                <div class="quarter-3"></div>
+                <div class="quarter-4"></div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h1><a href="./portfolio/" class="portfolio-title">Portfolio</a></h1>
+            <p>This is the place where you can check out my general artstyle of Minecraft Block, Item Textures and some Entities!</p>
+        </div>
+    </section>
+
     <section class="footer">
         <div class="footer">
             <div class="links-container">
@@ -82,6 +150,7 @@
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#allure">Allure</a></li>
                         <li><a href="#needcoolershoes">NeedCoolerShoes</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="links">

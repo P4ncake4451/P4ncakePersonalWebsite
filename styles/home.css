@@ -8,13 +8,33 @@
 }
 
 @keyframes allure-background {
-    0%{background-position:0% 0%}
-    100%{background-position:1200% 300%}
+    from {background-position:0% 0%}
+    to   {background-position:1200% 300%}
 }
 
 @keyframes ncrs-background {
-    0%{background-position:0% 0%}
-    100%{background-position:5000% 10000%}
+    from {background-position:0% 0%}
+    to   {background-position:5000% 10000%}
+}
+
+@keyframes portfolio-background {
+    from {background-position:2500% 1000%}
+    to   {background-position:0% 0%}
+}
+
+@keyframes portfolio-background-overlay {
+    from {background-position:0% 0%}
+    to   {background-position:2500% 1000%}
+}
+
+@keyframes portfolio-apple {
+    from { transform: rotate(-15deg) translate(0px, -10px); }
+    to { transform: rotate(-10deg) translate(5px, 10px); }
+}
+
+@keyframes portfolio-slimeball {
+    from { transform: rotate(15deg) translate(0px, 10px); }
+    to { transform: rotate(10deg) translate(-5px, -10px); }
 }
 
 section.biography {
@@ -119,6 +139,117 @@ img.needcoolershoes-logo {
 
 img.needcoolershoes-logo:hover {
     transform: scale(1.1);
+}
+
+section.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(332deg, #ff648b49, #ec486318, #ffcf331c, #ffd75544), url(../images/grid.png) repeat;
+    animation: portfolio-background 3600s linear infinite;
+    image-rendering:pixelated;
+    background-origin: 50% 50%;
+    height: 100vh;
+}
+
+div.portfolio {
+    width: 55%;
+    z-index: 1;
+}
+
+div.portfolio-bg-overlay {
+    position: absolute;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background-image: url("../images/grid-overlay.png");
+    opacity: 0.2;
+    filter:blur(2px);
+    animation: portfolio-background-overlay 3600s linear infinite;
+    mix-blend-mode: screen;
+}
+
+.portfolio-image {
+    --scale: 384px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--scale);
+    height: var(--scale);
+    filter: drop-shadow(6px 6px 10px #0007);
+}
+
+.portfolio-image div {
+    width: calc(var(--scale)/2);
+    height: calc(var(--scale)/2);
+    background-size: calc(200% + 1.3px);
+}
+
+.portfolio-image .quarter-1 {
+    filter: url("#1");
+    background-position: bottom right;
+}
+.portfolio-image .quarter-2 {
+    filter: url("#2");
+    background-position: top left;
+}
+.portfolio-image .quarter-3 {
+    filter: url("#3");
+    background-position: bottom left;
+
+}
+.portfolio-image .quarter-4 {
+    filter: url("#4");
+    background-position: top right;
+}
+
+.portfolio-bg-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.8;
+    filter: brightness(0.8);
+}
+
+.portfolio-apple {
+    top:calc(50% - var(--scale) / 2);
+    left: calc((0px - var(--scale) * 0.25));
+    animation: portfolio-apple 5s ease-in-out infinite alternate;
+}
+
+.portfolio-apple div {
+    background-image: url("../portfolio/pictures/apple.png");
+}
+
+.portfolio-slimeball {
+    top:calc(50% - var(--scale) / 2);
+    right: calc(0px - (var(--scale) * 0.25));
+    animation: portfolio-slimeball 6s ease-in-out infinite alternate;
+}
+
+.portfolio-slimeball div {
+    background-image: url("../portfolio/pictures/slime_ball.png");
+}
+
+.portfolio-title {
+    color: #fff5;
+    background: linear-gradient(90deg,#fcda68,#f34ea0);
+    background-size: 100% 200%;
+    background-clip: text;
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+    text-decoration-thickness: 2px;
+    transition: text-underline-offset 0.5s, text-decoration-thickness 0.2s, color 0.7s;
+}
+
+.portfolio-title:hover {
+    color:#fff7;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 4px;
 }
 
 /* Responsiveness */
