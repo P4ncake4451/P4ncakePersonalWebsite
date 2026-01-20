@@ -309,6 +309,16 @@ div.portfolio-bg-overlay {
     section.biography {
         animation: bio-background 40s ease-in-out infinite;
     }
+
+    .portfolio-apple {
+        top:calc(45% - var(--scale) / 2);
+        left: calc((-20px - var(--scale) * 0.25));
+    }
+
+    .portfolio-slimeball {
+        top:calc(55% - var(--scale) / 2);
+        right: calc(-20px - (var(--scale) * 0.25));
+    }
 }
 
 @media (max-width: 470px) {
