@@ -65,3 +65,26 @@ div.overlay {
     filter: url("#4");
     background-position: top right;
 }
+
+div.leave {
+    position: fixed;
+    top: 1.5rem;
+    left: 1rem;
+    margin:0;
+    padding:2rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../images/icons/leave.png");
+    opacity: 0.5;
+    filter: drop-shadow(1px 1px 10px #000);
+    background-size: cover;
+    image-rendering: pixelated;
+    z-index: 50;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+div.leave:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
