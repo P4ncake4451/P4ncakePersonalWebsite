@@ -72,8 +72,8 @@ div.leave {
     left: 1rem;
     margin:0;
     padding:2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     background-image: url("../images/icons/leave.png");
     opacity: 0.5;
     filter: drop-shadow(1px 1px 10px #000);
