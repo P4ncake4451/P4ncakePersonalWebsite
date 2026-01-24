@@ -22,6 +22,7 @@ html {
     scrollbar-color: #262a30 #191a1e;
     scrollbar-width: thin;
     -webkit-tap-highlight-color: #0000;
+    scroll-behavior: smooth;
 }
 
 body {
