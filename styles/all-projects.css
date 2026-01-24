@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'P4ncake 7-Segment';
+    src: url('../fonts/P4ncake7Segment.ttf');
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div.bottom-bar {
+    background-image: linear-gradient(#83848a ,#d2d3d8);
+    width: 100vw;
+    height: 25vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: #3ac7ff 0px 5px 0px 0px inset, #3ac7ff 0px 5px 4px 0px inset;
+}
+
+div.hour-notch {
+    position: absolute;
+    background-color: #0000;
+    width: calc(100% - 40vh);
+    height: 10vh;
+    position: relative;
+    left: 20vh;
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(0px 5px 0px #3ac7ff) drop-shadow(0px 3px 3px #3ac7ff55);
+}
+
+.notch-left, .notch-center, .notch-right {
+    background: linear-gradient(#fff2, #fff9, #fffe), repeating-linear-gradient(#dedede, #dedede 3px, #eee 2px, #eee 5px);
+}
+
+.notch-left, .notch-right {
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    width: 25vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.notch-left {
+    mask-image: url("../images/wii/notch-left.svg");
+}
+
+.notch-right {
+    mask-image: url("../images/wii/notch-right.svg");
+}
+
+.notch-center{
+    height: 100%;
+    width: calc(100vw - 90vh);
+    color:#aaa;
+    font-family: "P4ncake 7-Segment", sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.date {
+    position: absolute;
+    top: 16vh;
+    width: 100%;
+    color: #777;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.button-container {
+    position: absolute;
+    top:3.5vh;
+    width:18vh;
+    height: 11vh;
+    border-radius: 999px;
+    background: linear-gradient(#fff4, #ddd1);
+    background-size: 150% 150%;
+    background-position: center center;
+    border: #fff3 1.5vh solid;
+    filter: drop-shadow(#777 6px 7px 3px);
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+.left-button-container {
+    border-radius: 0 999px 999px 0;
+    left:-10px;
+    border-left:none;
+    justify-content: right;
+}
+
+.right-button-container {
+    border-radius: 999px 0 0 999px;
+    right:-10px;
+    border-right:none;
+    justify-content: left;
+}
+
+.button-round {
+    width:13vh;
+    height:13vh;
+    border-radius: 100%;
+    font-size:7vh;
+    border: #3ac7ff 2px solid;
+    background: linear-gradient(#ddd,#aaa);
+    color:#888;
+    box-shadow: #7776 -1vh -1vh 0.9vh 0.3vh inset, #6668 -0.3vh -0.5vh 0.5vh inset, #7772 -0.6vh -1.3vh 0 1.3vh inset, #3ac7ff77 0 0 0.4vh 0.3vh;
+    transition: transform 0.3s cubic-bezier( 0.27, 0, 0.16, 1.02 );
+    cursor: pointer;
+}
+
+.button-round:hover {
+    transform: scale(1.15);
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    background: linear-gradient(#888, #878787);
+    background-size: cover;
+    background-position: center center;
+}
+
+.p4ncake-icon {
+    mask-image: url("../images/icons/p4ncake.svg");
+    transform: scale(0.7);
+}
+
+.mail-icon {
+    mask-image: url("../images/icons/mail.svg");
+    transform: scale(0.7);
+}
+
+
+.channels {
+    background: repeating-linear-gradient(#0000, #eeed, #0000, #eeed, #0000, #eeed, #fff2) ,repeating-linear-gradient(#dedede, #dedede 3px, #eee 2px, #eee 5px);
+    height: 75vh;
+    width: 100%;
+}
+
+.channel-container {
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0px;
+}
+
+.channel {
+    --channel-image: url("../images/wii/channels/empty-channel.webp");
+    --scan-lines: repeating-linear-gradient(#cacaca01, #cacaca01 6px, #ddd4 3px, #ddd4 9px);
+    background: var(--scan-lines), var(--channel-image);
+    mask-image: url("../images/wii/squircle.svg");
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier( 0.27, 0, 0.16, 1.02 );
+}
+
+.channel:hover {
+    transform: scale(1.03);
+}
+
+.channel a {
+    display: block;
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
