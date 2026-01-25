@@ -21,6 +21,10 @@ let cells_to_render = [[0,0]];
 let cells_to_unrender = [];
 let rendered_cells = [];
 
+if (window.location.hash == "#all-projects") {
+    document.getElementById("leave").href = "./../all-projects";
+}
+
 root.style.setProperty("--scale", scale+"px");
 if (window_width < 640 || window_height < 480) {
     scale = 192;
