@@ -140,6 +140,17 @@ section.subprojects {
     background-image: url("../images/allure-3d-plants-banner.png");
 }
 
+.allure-fresh-animations .card-bg {
+    background-image: url("../images/allure-fresh-animations-banner.png");
+}
+
+@media (max-width: 1500px) {
+    .allure-fresh-animations .card-logo {
+        height: auto;
+        width: 90%;
+    }
+}
+
 @media (max-width: 1200px) {
     div.story {
         width: 65%;
@@ -167,6 +178,18 @@ section.subprojects {
     .card-logo {
         height: 75%;
         width: auto;
+    }
+    .allure-fresh-animations .card-logo {
+        height: 80%;
+        width: auto;
+        filter: drop-shadow(0 4px 10px #1116);
+    }
+}
+
+@media (max-width: 700px) {
+    .allure-fresh-animations .card-logo {
+        height: auto;
+        width: 90%;
     }
 }
 
