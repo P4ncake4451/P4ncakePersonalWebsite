@@ -197,7 +197,18 @@ a {
 }
 
 .navbar .accessibility-icon {
+    image-rendering: pixelated;
+    opacity: 0.4;
+    width: 24px;
+    user-select: none;
     display: none;
+}
+
+.accessibility-icon-hamburger {
+    image-rendering: pixelated;
+    opacity: 0.4;
+    width: 24px;
+    user-select: none;
 }
 
 .navbar .hamburger-menu {
@@ -413,11 +424,7 @@ section.footer * a:hover {
     }
 
     .navbar .accessibility-icon {
-        image-rendering: pixelated;
-        opacity: 0.4;
         display: block;
-        width: 24px;
-        user-select: none
     }
 }
 
@@ -446,11 +453,7 @@ section.footer * a:hover {
     }
 
     .accessibility-icon-hamburger {
-        image-rendering: pixelated;
-        opacity: 0.4;
         display: block;
-        width: 24px;
-        user-select: none
     }
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700&display=swap');
+
 @keyframes bio-background {
     0%{background-position:0% 0%}
     20%{background-position:25% 50%}
@@ -35,6 +37,11 @@
 @keyframes portfolio-slimeball {
     from { transform: rotate(15deg) translate(0px, 10px); }
     to { transform: rotate(10deg) translate(-5px, -10px); }
+}
+
+@keyframes scroll-scan-lines {
+    from {background-position:0px 15px}
+    to   {background-position:0px 0px}
 }
 
 section.biography {
@@ -252,7 +259,97 @@ div.portfolio-bg-overlay {
     text-decoration-thickness: 4px;
 }
 
+section.all-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#eee 0%, #ddd 25%, #2EA4CF 25%, #2195BF 75%, #0877A1 100%);
+    background-size: cover;
+    height: 100vh;
+    box-shadow: none;
+}
+
+section.all-projects::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/wii/channel-focus-overlay.svg");
+    opacity: 0.5;
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+section.all-projects::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(#cacaca01, #cacaca01 12px, #ddd1 3px, #ddd1 15px);
+    animation: scroll-scan-lines 2s linear infinite;
+    z-index: 7;
+}
+
+div.all-projects {
+    z-index:10;
+    display: block;
+    width: 55%;
+}
+
+.all-projects-title {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5rem;
+    font-size: 12rem;
+
+    color: #eeee;
+    background-clip: text;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.all-projects-title {
+    transition:transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+div.all-projects-title:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-image: url("../images/wii/bubbles.webp");
+}
+
 /* Responsiveness */
+
+/* Navbar */
+@media (max-width: 1300px) {
+
+    .navbar .font-settings span {
+        display: none;
+    }
+
+    .navbar .accessibility-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1001px) {
+    .logo span {
+        display: none;
+    }
+}
+
+
+/* Website */
 
 @media (max-width: 1200px) {
 
