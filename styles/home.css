@@ -44,6 +44,27 @@
     to   {background-position:0px 0px}
 }
 
+@keyframes wave1 {
+    0%{background-position:0% 0%}
+    25%{background-position:1000px 0%}
+    50%{background-position:250px 0%}
+    75%{background-position:1250px 0%}
+    100%{background-position:0% 0%}
+}
+
+@keyframes wave2 {
+    0%{background-position:-500px 0%}
+    25%{background-position:600px 0%}
+    50%{background-position:-300px 0%}
+    75%{background-position:700px 0%}
+    100%{background-position:-500px 0%}
+}
+
+@keyframes float {
+    from { transform: translateY(20px); }
+    to { transform: translateY(-20px); }
+}
+
 section.biography {
     background-image: linear-gradient(#3453, #223b), url("../images/allure-birch.png"), radial-gradient(at 94.7% 22.2%, #46503d 0px, transparent 50%), radial-gradient(at 49.7% 49.3%, #b8775c 0px, transparent 50%), radial-gradient(at 48.6% 1.5%, #cfe6ed 0px, transparent 50%), radial-gradient(at 18.7% 71.9%, #7fc761 0px, transparent 50%), radial-gradient(at 68.6% 94.3%, #BBBFBA 0px, transparent 50%), linear-gradient(#8CB07D);
     background-size: auto 120%;
@@ -302,7 +323,7 @@ div.all-projects {
     letter-spacing: -0.5rem;
     font-size: 12rem;
 
-    color: #eeee;
+    color: #eeed;
     background-clip: text;
     text-decoration: none;
     display: flex;
@@ -311,11 +332,11 @@ div.all-projects {
 }
 
 div.all-projects-title {
-    transition:transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    animation: float 1s infinite cubic-bezier(0.37,0,0.63,1) alternate;
 }
 
 div.all-projects-title:hover {
-    transform: scale(1.05);
     color: #fff;
 }
 
@@ -326,6 +347,50 @@ div.all-projects-title:hover {
     z-index: 1;
     opacity: 0.5;
     background-image: url("../images/wii/bubbles.webp");
+}
+
+.wave1 {
+    position: absolute;
+    margin-bottom: 75vh;
+    height: 25vh;
+    width: 100%;
+    background-image: url("../images/wii/wave1.svg");
+    background-size: auto 100%;
+    animation: wave1 10s ease-in-out infinite;
+    z-index: 3;
+}
+
+.wave2 {
+    position: absolute;
+    margin-bottom: 75vh;
+    height: 25vh;
+    width: 100%;
+    background-image: url("../images/wii/wave2.svg");
+    background-size: auto 100%;
+    animation: wave2 11s ease-in-out infinite;
+    z-index: 2;
+}
+
+.wave3 {
+    position: absolute;
+    margin-bottom: 75vh;
+    height: 25vh;
+    width: 100%;
+    background-image: url("../images/wii/wave3.svg");
+    background-size: auto 100%;
+    animation: wave1 13s ease-in-out infinite;
+    z-index: 1;
+}
+
+.wave4 {
+    position: absolute;
+    margin-bottom: 75vh;
+    height: 25vh;
+    width: 100%;
+    background-image: url("../images/wii/wave4.svg");
+    background-size: auto 100%;
+    animation: wave2 8s ease-in-out infinite;
+    z-index: 4;
 }
 
 /* Responsiveness */
@@ -387,6 +452,11 @@ div.all-projects-title:hover {
 
     section.allure {
         background-size: 9000px;
+    }
+
+    .all-projects-title {
+        font-size: 18vw;
+        letter-spacing: -0.75vw;
     }
 }
 
