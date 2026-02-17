@@ -250,7 +250,7 @@ div.portfolio-bg-overlay {
 }
 
 .portfolio-apple div {
-    background-image: url("../portfolio/pictures/apple.png");
+    background-image: url("../portfolio/pictures/item/apple.png");
 }
 
 .portfolio-slimeball {
@@ -260,7 +260,7 @@ div.portfolio-bg-overlay {
 }
 
 .portfolio-slimeball div {
-    background-image: url("../portfolio/pictures/slime_ball.png");
+    background-image: url("../portfolio/pictures/item/slime_ball.png");
 }
 
 .portfolio-title {
