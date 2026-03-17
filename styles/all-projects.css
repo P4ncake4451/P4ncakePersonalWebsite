@@ -164,11 +164,23 @@ div.hour-notch {
 
     opacity: 1;
     border-radius:999px;
-    background: linear-gradient(#ddd6,#aaa6);
-    color:#7778;
-    font-size: 50px;
-    box-shadow: #7776 -1vh -1vh 0.9vh 0.3vh inset, #6668 -0.3vh -0.5vh 0.5vh inset, #7772 -0.6vh -1.3vh 0 1.3vh inset;
-    transition: left .2s ease-out, right .2s ease-out, opacity .3s ease-in-out;
+    background: radial-gradient(at 30% 30%, #fff3 40%, #0000 40%),
+                linear-gradient(#ffadf866, #ffc7ad55, #bbeaff58);
+    border: solid 2px #eff6;
+    color:#fffd;
+    text-shadow: #5573 2px 3px 4px;
+    font-size: 70px;
+    box-shadow: #ffcab677 -5px 5px 10px inset,
+                #7bdaffaa -5px -10px 10px -5px inset ,
+                #def 10px 10px 20px -10px inset,
+                #2236 1px 2px 10px 1px inset,
+                #4466 0 5px 20px;
+    transition: left .2s ease-out, right .2s ease-out, opacity .3s ease-in-out, transform .3s ease-out;
+    backdrop-filter: blur(5px);
+}
+
+.nav-arrow:hover {
+    transform: scale(1.1);
 }
 
 .left-arrow {
