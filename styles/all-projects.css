@@ -156,7 +156,7 @@ div.hour-notch {
 
 .nav-arrow {
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50dvh - 50px);
     z-index: 20;
     display: block;
     width: 100px;
@@ -178,16 +178,18 @@ div.hour-notch {
 }
 
 .channels {
+    overflow: hidden;
+    position: fixed;
     background: repeating-linear-gradient(#0000, #eeed, #0000, #eeed, #0000, #eeed, #fff2) ,repeating-linear-gradient(#dedede, #dedede 3px, #eee 2px, #eee 5px);
     height: 75vh;
     width: 100%;
 }
 
 .channel-container {
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
-    height: 75vh;
+    height: calc(100dvh - 25vh);
     width: 100%;
     transform: scale(0.9);
     display: grid;
