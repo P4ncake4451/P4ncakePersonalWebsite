@@ -36,6 +36,9 @@ setInterval(updateClock, 1000);
 let selectedChannel = 0;
 let maxChannels = 12;
 
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
+
 let channelContainer = document.getElementById("channels");
 let channels = Array.from(document.getElementById("channel-container").children);
 let gridHeight = 3;
@@ -48,9 +51,11 @@ const emptyChannel = document.createElement("div");
 emptyChannel.classList.add("channel");
 
 setupChannels();
+updatePosition(0);
 
 addEventListener("resize", (event) => {
   setupChannels();
+  updatePosition(0);
 });
 
 console.log(emptyChannels)
@@ -80,6 +85,16 @@ function updatePosition(position) {
     if(i>position){
       element.classList.add("channel-container-right");
     }
+  }
+
+  leftArrow.classList.add("hidden-arrow");
+  rightArrow.classList.add("hidden-arrow");
+
+  if(selectedChannel>0){
+    leftArrow.classList.remove("hidden-arrow");
+  }
+  if(selectedChannel<=fullPages-1){
+    rightArrow.classList.remove("hidden-arrow");
   }
 }
 

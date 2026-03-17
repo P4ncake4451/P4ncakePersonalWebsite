@@ -162,11 +162,13 @@ div.hour-notch {
     width: 100px;
     height: 100px;
 
+    opacity: 1;
     border-radius:999px;
     background: linear-gradient(#ddd6,#aaa6);
     color:#7778;
     font-size: 50px;
     box-shadow: #7776 -1vh -1vh 0.9vh 0.3vh inset, #6668 -0.3vh -0.5vh 0.5vh inset, #7772 -0.6vh -1.3vh 0 1.3vh inset;
+    transition: left .2s ease-out, right .2s ease-out, opacity .3s ease-in-out;
 }
 
 .left-arrow {
@@ -175,6 +177,16 @@ div.hour-notch {
 
 .right-arrow {
     right: 10px;
+}
+
+.left-arrow.hidden-arrow {
+    left: -150px;
+    opacity: 0.2;
+}
+
+.right-arrow.hidden-arrow {
+    right: -150px;
+    opacity: 0.2;
 }
 
 .channels {
