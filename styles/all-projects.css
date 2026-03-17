@@ -154,6 +154,28 @@ div.hour-notch {
     transform: scale(0.7);
 }
 
+.nav-arrow {
+    position: absolute;
+    top: calc(50% - 50px);
+    z-index: 20;
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    border-radius:999px;
+    background: linear-gradient(#ddd6,#aaa6);
+    color:#7778;
+    font-size: 50px;
+    box-shadow: #7776 -1vh -1vh 0.9vh 0.3vh inset, #6668 -0.3vh -0.5vh 0.5vh inset, #7772 -0.6vh -1.3vh 0 1.3vh inset;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
 
 .channels {
     background: repeating-linear-gradient(#0000, #eeed, #0000, #eeed, #0000, #eeed, #fff2) ,repeating-linear-gradient(#dedede, #dedede 3px, #eee 2px, #eee 5px);
@@ -162,7 +184,10 @@ div.hour-notch {
 }
 
 .channel-container {
-    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 75vh;
     width: 100%;
     transform: scale(0.9);
     display: grid;
@@ -170,6 +195,15 @@ div.hour-notch {
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     padding: 0px;
+    transition: 0.5s left cubic-bezier(0.38, -0.02, 0.31, 1.02);
+}
+
+.channel-container-left {
+    left: -100vw
+}
+
+.channel-container-right {
+    left: 100vw
 }
 
 .channel {
@@ -328,5 +362,6 @@ div.hour-notch {
     .channel-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        transform: scale(0.95);
     }
 }
