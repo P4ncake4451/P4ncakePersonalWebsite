@@ -58,6 +58,17 @@ addEventListener("resize", (event) => {
   updatePosition(0);
 });
 
+addEventListener("keydown", (key) => {
+  switch(key.key) {
+    case '=': case '+': case 'ArrowRight': case ']': case '.': case 'd':
+      scrollChannelsRight();
+      break;
+    case '-': case '_': case 'ArrowLeft': case '[': case ',': case 'a':
+      scrollChannelsLeft();
+      break;
+  }
+});
+
 console.log(emptyChannels)
 
 function scrollChannelsLeft(){
