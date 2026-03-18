@@ -164,11 +164,11 @@ div.hour-notch {
 
     opacity: 1;
     border-radius:999px;
-    background: radial-gradient(at 30% 30%, #fff3 40%, #0000 40%),
+    background: var(--icon) calc(100% + 2px) calc(100% + 2px),
+                radial-gradient(at 30% 30%, #fff3 40%, #0000 40%),
                 linear-gradient(#ffadf866, #ffc7ad55, #bbeaff58);
     border: solid 2px #eff6;
-    color:#fffd;
-    text-shadow: #5573 2px 3px 4px;
+    color:#fff0;
     font-size: 70px;
     box-shadow: #ffcab677 -5px 5px 10px inset,
                 #7bdaffaa -5px -10px 10px -5px inset ,
@@ -184,10 +184,12 @@ div.hour-notch {
 }
 
 .left-arrow {
+    --icon: url("../images/wii/bubble-minus.svg");
     left: 10px;
 }
 
 .right-arrow {
+    --icon: url("../images/wii/bubble-plus.svg");
     right: 10px;
 }
 
