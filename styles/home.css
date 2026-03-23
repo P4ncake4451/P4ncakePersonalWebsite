@@ -283,8 +283,7 @@ div.portfolio-bg-overlay {
 section.all-projects {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(#eee 0%, #ddd 25%, #2EA4CF 25%, #2195BF 75%, #0877A1 100%);
+    background-image: linear-gradient(#eee 0%, #ddd 25%, #2EA4CF 25%, #2195BF 60%, #0877A1 90%);
     background-size: cover;
     height: 100vh;
     box-shadow: none;
@@ -309,6 +308,13 @@ section.all-projects::before {
     background: repeating-linear-gradient(#cacaca01, #cacaca01 12px, #ddd1 3px, #ddd1 15px);
     animation: scroll-scan-lines 2s linear infinite;
     z-index: 7;
+}
+
+.all-projects-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 div.all-projects {
@@ -355,6 +361,50 @@ div.all-projects-title::after {
 div.all-projects-title:hover::after {
     width: 100%;
     height: 10px;
+    opacity: 1;
+}
+
+section.all-projects .button-container {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.bubble-button {
+    cursor:pointer;
+    display: flex;
+    display: block;
+    width: auto;
+    min-width: 50vw;
+    height: calc(70px + 3vw);
+    max-height: 12.5vh;
+
+    margin-bottom: 5svh;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius:999px;
+    opacity: 0.8;
+    background: radial-gradient(at 45% 20%, #fff3 40%, #0000 45%),
+                linear-gradient(to right, #ffadf866, #ffc7ad55, #bbeaff58);
+    border: solid 2px #eff6;
+    color:#fffc;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: calc(1.2rem + 1vw);
+    box-shadow: #ffcab677 -5px 5px 10px inset,
+                #7bdaffaa -5px -10px 10px -5px inset ,
+                #def 10px 10px 20px -10px inset,
+                #2236 1px 2px 10px 1px inset,
+                #4466 0 5px 20px;
+    transition: transform 0.5s ease-out, opacity 0.4s ease-in-out;
+}
+
+.bubble-button:hover {
+    transform: scale(1.03);
     opacity: 1;
 }
 
