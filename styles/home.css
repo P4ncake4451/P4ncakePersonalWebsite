@@ -144,7 +144,7 @@ div.needcoolershoes {
 
 .needcoolershoes-logo {
     transition: transform 0.3s ease-in-out;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 .needcoolershoes-logo a {
@@ -318,7 +318,7 @@ div.all-projects {
 }
 
 .all-projects-title {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Titillium Web", Tahoma, sans-serif;
     font-weight: 700;
     letter-spacing: -0.5rem;
     font-size: 12rem;

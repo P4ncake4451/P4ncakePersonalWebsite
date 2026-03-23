@@ -40,7 +40,7 @@ body {
 }
 
 body.accessible-font {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 *::selection {
@@ -195,7 +195,7 @@ a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 1.25rem;
     color: #ddd7;
 }
@@ -327,7 +327,7 @@ input[type="search"] {
 }
 
 .accessible-font input[type="search"] {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     padding-top:2px;
 }
 
