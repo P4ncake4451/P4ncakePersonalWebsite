@@ -69,6 +69,21 @@ addEventListener("keydown", (key) => {
   }
 });
 
+addEventListener("wheel", (wheel) => {
+  if(wheel.wheelDeltaY<0){
+    scrollChannelsRight();
+  }
+  if(wheel.wheelDeltaY>0){
+    scrollChannelsLeft();
+  }
+  if(wheel.wheelDeltaX<0){
+    scrollChannelsRight();
+  }
+  if(wheel.wheelDeltaX>0){
+    scrollChannelsLeft();
+  }
+});
+
 console.log(emptyChannels)
 
 function scrollChannelsLeft(){
