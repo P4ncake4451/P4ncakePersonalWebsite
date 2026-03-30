@@ -318,7 +318,7 @@ section.all-projects::before {
 }
 
 div.all-projects {
-    z-index:10;
+    z-index:11;
     display: block;
     width: 55%;
 }
@@ -375,6 +375,7 @@ section.all-projects .button-container {
 }
 
 .bubble-button {
+    z-index: 10;
     cursor:pointer;
     display: flex;
     display: block;
