@@ -70,16 +70,16 @@ addEventListener("keydown", (key) => {
 });
 
 addEventListener("wheel", (wheel) => {
-  if(wheel.wheelDeltaY<0){
+  if(wheel.deltaY>0){
     scrollChannelsRight();
   }
-  if(wheel.wheelDeltaY>0){
+  if(wheel.deltaY<0){
     scrollChannelsLeft();
   }
-  if(wheel.wheelDeltaX<0){
+  if(wheel.deltaX>0){
     scrollChannelsRight();
   }
-  if(wheel.wheelDeltaX>0){
+  if(wheel.deltaX<0){
     scrollChannelsLeft();
   }
 });
