@@ -429,7 +429,7 @@ section.footer * a:hover {
     top:0;
     left:0;
     z-index: -1;
-    height: 10dvh;
+    height: 50dvh;
     width: 100vw;
 }
 
@@ -438,8 +438,14 @@ section.footer * a:hover {
     bottom: 0;
     left:0;
     z-index: -1;
-    height: 10dvh;
+    height: 50dvh;
     width: 100vw;
+}
+
+.bottom-overshoot img {
+    position: absolute;
+    bottom:0;
+    right: 0;
 }
 
 /* Responsiveness */
@@ -459,7 +465,7 @@ section.footer * a:hover {
     .hamburger-links {
         display: none;
     }
-}
+} 
 
 @media (max-width: 1000px) {
 
