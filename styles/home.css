@@ -462,6 +462,14 @@ section.all-projects .button-container {
     z-index: 4;
 }
 
+.top-overshoot {
+    background-image: linear-gradient(to right, #495649, #bedeff, #495649);
+}
+
+.bottom-overshoot {
+    background-image: linear-gradient(to right, #38254c, #2b2733, #392341);
+}
+
 /* Responsiveness */
 
 /* Navbar */

@@ -424,6 +424,24 @@ section.footer * a:hover {
     filter: brightness(1.1)
 }
 
+.top-overshoot {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 10dvh;
+    width: 100vw;
+}
+
+.bottom-overshoot {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    height: 10dvh;
+    width: 100vw;
+}
+
 /* Responsiveness */
 
 @media (max-width: 1200px) {

@@ -172,6 +172,14 @@ section.subprojects {
     background-image: url("../images/allure-fresh-animations-banner.png");
 }
 
+.top-overshoot {
+    background-image: linear-gradient(to right, #24202e, #565548, #1f1b28, #5c3a34, #2a1f26, #4a4f60);
+}
+
+.bottom-overshoot {
+    background-image: linear-gradient(to right, #6e5d6e, #6e676d, #6e5d6e, #6e676d, #6e5d6e);
+}
+
 @media (max-width: 1500px) {
     .allure-fresh-animations .card-logo {
         height: auto;
