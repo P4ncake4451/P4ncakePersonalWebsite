@@ -511,3 +511,15 @@ section.footer * a:hover {
         font-size: 1rem;
     }
 }
+
+/* Firefox */
+
+.firefox-only {
+    display:none;
+}
+
+@-moz-document url-prefix() {
+    .firefox-only {
+        display: initial;
+    }
+}
