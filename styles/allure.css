@@ -84,6 +84,7 @@ section.subprojects {
     background-size: cover;
     background-position: center;
     height: fit-content;
+    min-height: 100vh;
     padding-bottom: 5rem;
 }
 
