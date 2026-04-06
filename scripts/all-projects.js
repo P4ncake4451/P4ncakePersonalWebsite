@@ -84,8 +84,6 @@ addEventListener("wheel", (wheel) => {
   }
 });
 
-console.log(emptyChannels)
-
 function scrollChannelsLeft(){
   if(selectedChannel>0){
     selectedChannel--;  
