@@ -228,6 +228,9 @@ section.subprojects {
         height: auto;
         width: 90%;
     }
+    .cards {
+        font-size:3.2vw;
+    }
 }
 
 @media (max-width: 600px) {
